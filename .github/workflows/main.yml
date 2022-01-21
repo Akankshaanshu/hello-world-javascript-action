@@ -8,7 +8,7 @@ jobs:
       #- uses: actions/checkout@main
       - name: Hello world action step
         id: hello
-        uses: ./.github/workflows/action
+        uses: ./../.github/workflows/action
         with:
           who-to-greet: 'Akanksha'
       # Use the output from the `hello` step
