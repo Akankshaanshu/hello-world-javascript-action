@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      #- uses: actions/checkout@main
+      - uses: actions/checkout@main
       - name: Hello world action step
         id: hello
-        uses: ./../.github/workflows/action
+        uses: ./../action.yml
         with:
           who-to-greet: 'Akanksha'
       # Use the output from the `hello` step
